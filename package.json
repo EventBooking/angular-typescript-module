@@ -18,8 +18,7 @@
     },
     "homepage": "https://github.com/EventBooking/angular-typescript-module#readme",
     "dependencies": {
-        "tsd": "^0.6.5",
-        "typings": "^0.6.1"
+        "tsd": "^0.6.5"
     },
     "devDependencies": {
         "gulp": "^3.9.0",
