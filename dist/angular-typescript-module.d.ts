@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 declare module AngularTypescriptModule {
     interface IModule {
         config(appConfig: Function): IModule;

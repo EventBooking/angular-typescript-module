@@ -1,5 +1,4 @@
 /// <reference path="../typings/tsd.d.ts" />
-
 module AngularTypescriptModule {
 
     export interface IModule {
