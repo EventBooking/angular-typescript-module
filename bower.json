@@ -1,0 +1,23 @@
+{
+  "name": "angular-typescript-module",
+  "version": "0.0.0",
+  "homepage": "https://github.com/EventBooking/angular-typescript-module",
+  "authors": [
+    "Mike Walters <mike@eventbooking.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo",
+    "src",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}

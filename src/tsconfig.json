@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "target": "es5",
+        "out": "dist/angular-typescript-module.js"
+    }
+}
