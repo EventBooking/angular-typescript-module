@@ -1,5 +1,10 @@
 /// <reference path="../typings/tsd.d.ts" />
-module AngularTypescriptModule {
+module Angular {
+
+    export function module(name: string, modules?: string[], config?: Function): IModule {
+        var mod = new Module(name, modules, config);
+        return mod;
+    }
 
     export interface IModule {
         config(appConfig: Function): IModule;
@@ -13,7 +18,7 @@ module AngularTypescriptModule {
         constant(name: string, value: any): IModule;
     }
 
-    export class Module implements IModule {
+    class Module implements IModule {
         private module: ng.IModule;
 
         constructor(name: string, modules?: string[], config?: Function) {

@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "tsc": "tsc -p src & gulp stripRefs",
+        "tsc:w": "tsc -p src -w",
         "tsd": "tsd"
     },
     "repository": {
