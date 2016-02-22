@@ -1,28 +1,31 @@
 {
-    "name": "angular-typescript-module",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "tsc": "tsc -p src & gulp stripRefs",
-        "tsc:w": "tsc -p src -w",
-        "tsd": "tsd"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/EventBooking/angular-typescript-module.git"
-    },
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/EventBooking/angular-typescript-module/issues"
-    },
-    "homepage": "https://github.com/EventBooking/angular-typescript-module#readme",
-    "dependencies": {
-        "tsd": "^0.6.5"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-strip-comments": "^2.2.1"
-    }
+  "name": "angular-typescript-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "tsc": "tsc -p src & gulp postTsc",
+    "tsc:w": "tsc -p src -w & gulp postTsc",
+    "tsd": "tsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EventBooking/angular-typescript-module.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EventBooking/angular-typescript-module/issues"
+  },
+  "homepage": "https://github.com/EventBooking/angular-typescript-module#readme",
+  "dependencies": {
+    "tsd": "^0.6.5"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-strip-comments": "^2.2.1"
+  }
 }
