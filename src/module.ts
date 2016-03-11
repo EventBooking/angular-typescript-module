@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 module Angular {
 
     export function module(name: string, modules?: string[], config?: Function): IModule {
@@ -68,44 +67,6 @@ module Angular {
         constant(name: string, value): IModule {
             this.module.constant(name, value);
             return this;
-        }
-    }
-
-    // filters
-    class FilterFactory {
-        static create(type: IActivatorClass): any {
-            var filter = (...inject: any[]) => {
-                var instance = Activator.create(type, inject);
-                return (...options: any[]) => {
-                    return instance.filter.apply(instance, options);
-                };
-            };
-            filter["$inject"] = type["$inject"];
-            return filter;
-        }
-    }
-
-    // directives
-    class DirectiveFactory {
-        static create(type: IActivatorClass): any {
-            var directive = (...inject: any[]) => {
-                return Activator.create(type, inject);
-            };
-            directive["$inject"] = type["$inject"];
-            return directive;
-        }
-    }
-
-    // activator
-    export interface IActivatorClass {
-        new (...params: any[]);
-    }
-
-    class Activator {
-        static create(type: IActivatorClass, params: any[]) {
-            var instance = Object.create(type.prototype);
-            instance.constructor.apply(instance, params);
-            return instance;
         }
     }
 }

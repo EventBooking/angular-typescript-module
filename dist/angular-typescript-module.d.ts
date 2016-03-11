@@ -1,4 +1,22 @@
 declare module Angular {
+    interface IActivatorClass {
+        new (...params: any[]): any;
+    }
+    class Activator {
+        static create(type: IActivatorClass, params: any[]): any;
+    }
+}
+declare module Angular {
+    class DirectiveFactory {
+        static create(type: IActivatorClass): any;
+    }
+}
+declare module Angular {
+    class FilterFactory {
+        static create(type: IActivatorClass): any;
+    }
+}
+declare module Angular {
     function module(name: string, modules?: string[], config?: Function): IModule;
     interface IModule {
         config(appConfig: Function): IModule;
@@ -10,8 +28,5 @@ declare module Angular {
         provider(name: string, provider: any): IModule;
         factory(name: string, factory: Function): IModule;
         constant(name: string, value: any): IModule;
-    }
-    interface IActivatorClass {
-        new (...params: any[]): any;
     }
 }
