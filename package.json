@@ -4,13 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "pretest": "npm run tsc:tests",
+        "pretest": "npm run tsc",
         "test": "karma start",
-        "postinstall": "bower install & typings install",
-        "tsc": "tsc -p src",
-        "tsc:w": "tsc -p src -w",
-        "tsc:tests": "tsc -p tests",
-        "tsc:tests:w": "tsc -p tests -w"
+        "tsc": "tsc",
+        "tsc:w": "tsc -w"
     },
     "repository": {
         "type": "git",
@@ -23,15 +20,12 @@
     },
     "homepage": "https://github.com/EventBooking/angular-typescript-module#readme",
     "dependencies": {
-        "tsd": "^0.6.5"
+        
     },
     "devDependencies": {
-        "bower": "^1.7.7",
         "del": "^2.2.0",
         "gulp": "^3.9.1",
         "gulp-concat": "^2.6.0",
-        "typescript": "^1.8.7",
-        "typings": "^0.7.7",
         "angular-mocks": "^1.4.9",
         "chai": "^3.4.1",
         "jasmine-core": "^2.4.1",
@@ -48,6 +42,7 @@
         "karma-teamcity-reporter": "^0.2.1",
         "mocha": "^2.3.4",
         "phantomjs": "^1.9.19",
-        "sinon": "^1.17.2"
+        "sinon": "^1.17.2",
+        "typescript": "^2.1.6"
     }
 }

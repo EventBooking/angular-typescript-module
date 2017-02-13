@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": [ "dom", "es6" ],
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "inlineSourceMap": true,
+        "inlineSources": true
+    },
+    "ignore": [
+        "node_modules",
+        "dist",
+        "coverage"
+    ]
+}
