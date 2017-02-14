@@ -1,14 +1,14 @@
-module Angular {
-    export class FilterFactory {
-        static create(type: IActivatorClass): any {
-            var filter = (...inject: any[]) => {
-                var instance = Activator.create(type, inject);
-                return (...options: any[]) => {
-                    return instance.filter.apply(instance, options);
-                };
+import { IActivatorClass, Activator } from "./activator";
+
+export class FilterFactory {
+    static create(type: IActivatorClass): any {
+        var filter = (...inject: any[]) => {
+            var instance = Activator.create(type, inject);
+            return (...options: any[]) => {
+                return instance.filter.apply(instance, options);
             };
-            filter["$inject"] = type["$inject"];
-            return filter;
-        }
+        };
+        filter["$inject"] = type["$inject"];
+        return filter;
     }
 }

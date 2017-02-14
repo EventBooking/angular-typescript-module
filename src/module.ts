@@ -1,4 +1,8 @@
-module Angular {
+import { DirectiveFactory } from "./directive-factory";
+import { FilterFactory } from "./filter-factory";
+import * as angular from "angular";
+
+export module Angular {
 
     export function module(name: string, modules?: string[], config?: Function): IModule {
         var mod = new Module(name, modules, config);
@@ -34,7 +38,7 @@ module Angular {
             return this;
         }
 
-        controller(name: string, controller: Function): IModule {
+        controller(name: string, controller: Function | any): IModule {
             this.module.controller(name, controller);
             return this;
         }

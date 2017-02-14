@@ -1,15 +1,19 @@
 {
     "compilerOptions": {
         "moduleResolution": "node",
+        "module": "es6",
         "target": "es5",
         "lib": [ "dom", "es6" ],
+        "declaration": true,
         "noImplicitAny": false,
         "noEmitOnError": true,
         "removeComments": false,
-        "inlineSourceMap": true,
-        "inlineSources": true
+        "outDir": "dist"
     },
-    "ignore": [
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
         "node_modules",
         "dist",
         "coverage"
