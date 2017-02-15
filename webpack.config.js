@@ -3,11 +3,11 @@ var webpack = require("webpack"),
 
 module.exports = {
   entry: {
-    "module": "./src/module.ts"
+    "angular-ts.browser": "./src/module.ts"
   },
   output: {
     path: path.join(__dirname, "dist"),
-    filename: '[name].bundle.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.ts', '.js']
