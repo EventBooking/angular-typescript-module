@@ -2,12 +2,13 @@
   "name": "angular-typescript-module",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/module.js",
+  "main": "dist/angular-ts.browser.js",
+  "typings": "src/module.ts",
   "scripts": {
     "test": "karma start",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "build": "npm run tsc"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
