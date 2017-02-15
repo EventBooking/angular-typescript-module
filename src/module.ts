@@ -2,7 +2,7 @@ import { DirectiveFactory } from "./directive-factory";
 import { FilterFactory } from "./filter-factory";
 import * as angular from "angular";
 
-export function module(name: string, modules?: string[], config?: Function): IModule {
+function module(name: string, modules?: string[], config?: Function): IModule {
     var mod = new Module(name, modules, config);
     return mod;
 }
@@ -70,4 +70,8 @@ class Module implements IModule {
         this.module.constant(name, value);
         return this;
     }
+}
+
+export default {
+    module: module
 }
