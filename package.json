@@ -48,7 +48,6 @@
     "phantomjs": "^2.1.7",
     "phantomjs-prebuilt": "^2.1.14",
     "sinon": "^1.17.7",
-    "ts-loader": "^2.0.0",
     "typescript": "^2.1.6",
     "webpack": "^2.2.1"
   }
