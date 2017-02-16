@@ -25,31 +25,31 @@ var Module = (function () {
     };
     Module.prototype.controller = function (name, controller) {
         this.module.controller(name, controller);
-        return this;
+        return name;
     };
     Module.prototype.directive = function (name, directive) {
         this.module.directive(name, DirectiveFactory.create(directive));
-        return this;
+        return name;
     };
     Module.prototype.filter = function (name, filter) {
         this.module.filter(name, FilterFactory.create(filter));
-        return this;
+        return name;
     };
     Module.prototype.service = function (name, service) {
         this.module.service(name, service);
-        return this;
+        return name;
     };
     Module.prototype.provider = function (name, provider) {
         this.module.provider(name, provider);
-        return this;
+        return name;
     };
     Module.prototype.factory = function (name, factory) {
         this.module.factory(name, factory);
-        return this;
+        return name;
     };
     Module.prototype.constant = function (name, value) {
         this.module.constant(name, value);
-        return this;
+        return name;
     };
     return Module;
 }());
