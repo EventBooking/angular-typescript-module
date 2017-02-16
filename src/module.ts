@@ -9,13 +9,13 @@ function module(name: string, modules?: string[], config?: Function): IModule {
 export interface IModule {
     config(appConfig: Function): IModule;
     run(appRun: Function): IModule;
-    controller(name: string, controller: Function): IModule;
-    directive(name: string, directive: any): IModule;
-    filter(name: string, filter: any): IModule;
-    service(name: string, service: Function): IModule;
-    provider(name: string, provider: any): IModule;
-    factory(name: string, factory: Function): IModule;
-    constant(name: string, value: any): IModule;
+    controller(name: string, controller: Function): string;
+    directive(name: string, directive: any): string;
+    filter(name: string, filter: any): string;
+    service(name: string, service: Function): string;
+    provider(name: string, provider: any): string;
+    factory(name: string, factory: Function): string;
+    constant(name: string, value: any): string;
     name: string;
 }
 
@@ -40,39 +40,39 @@ class Module implements IModule {
         return this;
     }
 
-    controller(name: string, controller: Function | any): IModule {
+    controller(name: string, controller: Function | any): string {
         this.module.controller(name, controller);
-        return this;
+        return name;
     }
 
-    directive(name: string, directive): IModule {
+    directive(name: string, directive): string {
         this.module.directive(name, DirectiveFactory.create(directive));
-        return this;
+        return name;
     }
 
-    filter(name: string, filter): IModule {
+    filter(name: string, filter): string {
         this.module.filter(name, FilterFactory.create(filter));
-        return this;
+        return name;
     }
 
-    service(name: string, service: Function): IModule {
+    service(name: string, service: Function): string {
         this.module.service(name, service);
-        return this;
+        return name;
     }
 
-    provider(name: string, provider): IModule {
+    provider(name: string, provider): string {
         this.module.provider(name, provider);
-        return this;
+        return name;
     }
 
-    factory(name: string, factory: Function): IModule {
+    factory(name: string, factory: Function): string {
         this.module.factory(name, factory);
-        return this;
+        return name;
     }
 
-    constant(name: string, value): IModule {
+    constant(name: string, value): string {
         this.module.constant(name, value);
-        return this;
+        return name;
     }
 }
 
