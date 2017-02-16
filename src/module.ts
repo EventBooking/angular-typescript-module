@@ -16,6 +16,7 @@ export interface IModule {
     provider(name: string, provider: any): IModule;
     factory(name: string, factory: Function): IModule;
     constant(name: string, value: any): IModule;
+    name: string;
 }
 
 class Module implements IModule {
@@ -23,6 +24,10 @@ class Module implements IModule {
 
     constructor(name: string, modules?: string[], config?: Function) {
         this.module = angular.module(name, modules, config);
+    }
+
+    get name(): string {
+        return this.module.name;
     }
 
     config(appConfig: Function): IModule {
