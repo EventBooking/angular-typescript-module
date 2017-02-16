@@ -1,6 +1,5 @@
 import { DirectiveFactory } from "./directive-factory";
 import { FilterFactory } from "./filter-factory";
-import * as angular from "angular";
 function module(name, modules, config) {
     var mod = new Module(name, modules, config);
     return mod;
@@ -9,6 +8,13 @@ var Module = (function () {
     function Module(name, modules, config) {
         this.module = angular.module(name, modules, config);
     }
+    Object.defineProperty(Module.prototype, "name", {
+        get: function () {
+            return this.module.name;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Module.prototype.config = function (appConfig) {
         this.module.config(appConfig);
         return this;
