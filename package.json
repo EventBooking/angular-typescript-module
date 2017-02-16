@@ -2,7 +2,7 @@
   "name": "angular-typescript-module",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/module.js",
+  "main": "dist/angular-ts.browser.js",
   "typings": "dist/src/module.d.ts",
   "scripts": {
     "test": "karma start",
