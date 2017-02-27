@@ -54,7 +54,9 @@ var Module = (function () {
     };
     return Module;
 }());
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = {
+var Angular = {
     module: module
 };
+window['Angular'] = Angular;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Angular;

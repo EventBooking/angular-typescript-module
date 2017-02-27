@@ -76,6 +76,10 @@ class Module implements IModule {
     }
 }
 
-export default {
+var Angular = {
     module: module
-}
+};
+
+window['Angular'] = Angular;
+
+export default Angular;

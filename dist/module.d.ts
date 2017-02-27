@@ -10,7 +10,7 @@ export interface IModule {
     constant(name: string, value: any): string;
     name: string;
 }
-declare var _default: {
+declare var Angular: {
     module: (name: string, modules?: string[], config?: Function) => IModule;
 };
-export default _default;
+export default Angular;
