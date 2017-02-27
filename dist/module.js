@@ -1,5 +1,6 @@
-import { DirectiveFactory } from "./directive-factory";
-import { FilterFactory } from "./filter-factory";
+"use strict";
+var directive_factory_1 = require("./directive-factory");
+var filter_factory_1 = require("./filter-factory");
 function module(name, modules, config) {
     var mod = new Module(name, modules, config);
     return mod;
@@ -28,11 +29,11 @@ var Module = (function () {
         return name;
     };
     Module.prototype.directive = function (name, directive) {
-        this.module.directive(name, DirectiveFactory.create(directive));
+        this.module.directive(name, directive_factory_1.DirectiveFactory.create(directive));
         return name;
     };
     Module.prototype.filter = function (name, filter) {
-        this.module.filter(name, FilterFactory.create(filter));
+        this.module.filter(name, filter_factory_1.FilterFactory.create(filter));
         return name;
     };
     Module.prototype.service = function (name, service) {
@@ -53,6 +54,7 @@ var Module = (function () {
     };
     return Module;
 }());
-export default {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
     module: module
 };

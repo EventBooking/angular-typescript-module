@@ -1,4 +1,5 @@
-import { Activator } from "./activator";
+"use strict";
+var activator_1 = require("./activator");
 var FilterFactory = (function () {
     function FilterFactory() {
     }
@@ -8,7 +9,7 @@ var FilterFactory = (function () {
             for (var _i = 0; _i < arguments.length; _i++) {
                 inject[_i] = arguments[_i];
             }
-            var instance = Activator.create(type, inject);
+            var instance = activator_1.Activator.create(type, inject);
             return function () {
                 var options = [];
                 for (var _i = 0; _i < arguments.length; _i++) {
@@ -22,4 +23,4 @@ var FilterFactory = (function () {
     };
     return FilterFactory;
 }());
-export { FilterFactory };
+exports.FilterFactory = FilterFactory;

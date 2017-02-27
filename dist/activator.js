@@ -1,3 +1,4 @@
+"use strict";
 var Activator = (function () {
     function Activator() {
     }
@@ -8,4 +9,4 @@ var Activator = (function () {
     };
     return Activator;
 }());
-export { Activator };
+exports.Activator = Activator;
