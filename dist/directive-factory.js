@@ -1,5 +1,4 @@
-"use strict";
-var activator_1 = require("./activator");
+import { Activator } from "./activator";
 var DirectiveFactory = (function () {
     function DirectiveFactory() {
     }
@@ -9,11 +8,11 @@ var DirectiveFactory = (function () {
             for (var _i = 0; _i < arguments.length; _i++) {
                 inject[_i] = arguments[_i];
             }
-            return activator_1.Activator.create(type, inject);
+            return Activator.create(type, inject);
         };
         directive["$inject"] = type["$inject"];
         return directive;
     };
     return DirectiveFactory;
 }());
-exports.DirectiveFactory = DirectiveFactory;
+export { DirectiveFactory };
