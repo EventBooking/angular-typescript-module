@@ -21,19 +21,17 @@
   },
   "homepage": "https://github.com/EventBooking/angular-typescript-module#readme",
   "dependencies": {
-    "angular": "^1.6.2"
+    "angular": "^1.6.2",
+    "@types/angular": "^1.6.5",
+    "typescript": "^2.1.6"
   },
   "devDependencies": {
-    "@types/angular": "^1.6.5",
     "@types/angular-mocks": "^1.5.9",
     "@types/chai": "^3.4.34",
     "@types/mocha": "^2.2.39",
     "angular-mocks": "^1.4.9",
     "awesome-typescript-loader": "^3.0.4-rc.2",
     "chai": "^3.4.1",
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
     "jasmine-core": "^2.4.1",
     "karma": "^1.4.1",
     "karma-chai": "^0.1.0",
@@ -49,7 +47,6 @@
     "phantomjs": "^2.1.7",
     "phantomjs-prebuilt": "^2.1.14",
     "sinon": "^1.17.7",
-    "typescript": "^2.1.6",
     "webpack": "^2.2.1"
   }
 }
