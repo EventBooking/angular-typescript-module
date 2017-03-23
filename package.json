@@ -2,7 +2,8 @@
     "name": "angular-typescript-module",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "dist/angular-typescript-module.js",
+    "typings": "dist/angular-typescript-module.d.ts",
     "scripts": {
         "pretest": "npm run tsc:tests",
         "test": "karma start",

@@ -17,7 +17,6 @@
         "demo",
         "src",
         "gulpfile.js",
-        "package.json",
         "karma.conf.js",
         "typings.json"
     ],
