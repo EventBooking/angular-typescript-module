@@ -1,6 +1,6 @@
 {
   "name": "angular-typescript-module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/angular-typescript-module.js",
   "typings": "dist/angular-typescript-module.d.ts",
