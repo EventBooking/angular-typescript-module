@@ -5,14 +5,11 @@
         "removeComments": false,
         "inlineSourceMap": true,
         "inlineSources": true,
-        "target": "es5"
+        "target": "es5",
+        "outDir": "./output"
     },
     "files": [
-        "../typings/main.d.ts",
         "../dist/angular-typescript-module.d.ts",
         "module.tests.ts"
-    ],
-    "ignore": [
-        "../typings"
     ]
 }

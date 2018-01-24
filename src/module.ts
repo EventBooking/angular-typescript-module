@@ -35,7 +35,12 @@ module Angular {
         }
 
         controller(name: string, controller: Function): IModule {
-            this.module.controller(name, controller);
+            this.module.controller(name, controller as any);
+            return this;
+        }
+
+        component(name: string, options: angular.IComponentOptions): IModule {
+            this.module.component(name, options);
             return this;
         }
 

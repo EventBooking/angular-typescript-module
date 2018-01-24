@@ -10,13 +10,9 @@
         "out": "dist/angular-typescript-module.js"
     },
     "files": [
-        "../typings/main.d.ts",
         "activator.ts",
         "directive-factory.ts",
         "filter-factory.ts",        
         "module.ts"
-    ],
-    "ignore": [
-        "../typings"
     ]
 }
