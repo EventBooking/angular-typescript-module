@@ -1,4 +1,4 @@
-module Angular {
+namespace Angular {
     export class DirectiveFactory {
         static create(type: IActivatorClass): any {
             var directive = (...inject: any[]) => {

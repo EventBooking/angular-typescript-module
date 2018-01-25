@@ -1,4 +1,4 @@
-module Angular {
+namespace Angular {
 
     export function module(name: string, modules?: string[], config?: Function): IModule {
         var mod = new Module(name, modules, config);

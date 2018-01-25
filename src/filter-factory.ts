@@ -1,4 +1,4 @@
-module Angular {
+namespace Angular {
     export class FilterFactory {
         static create(type: IActivatorClass): any {
             var filter = (...inject: any[]) => {

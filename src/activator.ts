@@ -1,4 +1,4 @@
-module Angular {
+namespace Angular {
     export interface IActivatorClass {
         new (...params: any[]);
     }

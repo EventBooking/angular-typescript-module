@@ -1,4 +1,4 @@
-declare module Angular {
+declare namespace Angular {
     interface IActivatorClass {
         new (...params: any[]): any;
     }
@@ -6,17 +6,17 @@ declare module Angular {
         static create(type: IActivatorClass, params: any[]): any;
     }
 }
-declare module Angular {
+declare namespace Angular {
     class DirectiveFactory {
         static create(type: IActivatorClass): any;
     }
 }
-declare module Angular {
+declare namespace Angular {
     class FilterFactory {
         static create(type: IActivatorClass): any;
     }
 }
-declare module Angular {
+declare namespace Angular {
     function module(name: string, modules?: string[], config?: Function): IModule;
     interface IModule {
         config(appConfig: Function): IModule;
